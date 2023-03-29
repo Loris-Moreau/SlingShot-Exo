@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1103232285}
   - component: {fileID: 1103232286}
   m_Layer: 0
-  m_Name: Bow_Weapon
+  m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49,7 +49,8 @@ MonoBehaviour:
   chargeSpeed: 25
   fireButton: 323
   spawn: {fileID: 1849563366}
-  arrowRb: {fileID: 4070310750642791018, guid: 12731dbb18c38c94bb944f644a59d821, type: 3}
+  buulletRb: {fileID: 4070310750642791018, guid: 12731dbb18c38c94bb944f644a59d821,
+    type: 3}
 --- !u!1 &1370640448
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,7 +122,6 @@ GameObject:
   - component: {fileID: 1558119489}
   - component: {fileID: 1558119488}
   - component: {fileID: 1558119487}
-  - component: {fileID: 1558119486}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -194,19 +194,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1558119486
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1558119485}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1831870928
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,7 +205,6 @@ GameObject:
   - component: {fileID: 1831870932}
   - component: {fileID: 1831870931}
   - component: {fileID: 1831870930}
-  - component: {fileID: 1831870929}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -291,19 +277,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1831870929
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1831870928}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1849563365
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,7 +319,6 @@ GameObject:
   - component: {fileID: 2010440147}
   - component: {fileID: 2010440146}
   - component: {fileID: 2010440145}
-  - component: {fileID: 2010440144}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -419,19 +391,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2010440144
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2010440143}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2092625634
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,7 +402,6 @@ GameObject:
   - component: {fileID: 2092625638}
   - component: {fileID: 2092625637}
   - component: {fileID: 2092625636}
-  - component: {fileID: 2092625635}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -516,19 +474,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2092625635
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2092625634}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1703945419734397814
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,7 +485,6 @@ GameObject:
   - component: {fileID: 1844211950445575745}
   - component: {fileID: 5639384757868880819}
   - component: {fileID: 6525927860106250613}
-  - component: {fileID: 5590255745980725889}
   m_Layer: 0
   m_Name: Cube(6)
   m_TagString: Untagged
@@ -613,19 +557,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5590255745980725889
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1703945419734397814}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5739185765563178452
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,7 +568,6 @@ GameObject:
   - component: {fileID: 4450106959087774598}
   - component: {fileID: 9139091066258297172}
   - component: {fileID: 7823757794903172044}
-  - component: {fileID: 8609843713281208247}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Untagged
@@ -710,19 +640,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8609843713281208247
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5739185765563178452}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6489331686365558812
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,7 +651,6 @@ GameObject:
   - component: {fileID: 172040430447642467}
   - component: {fileID: 617379785809631026}
   - component: {fileID: 8351523284845473389}
-  - component: {fileID: 7273350118170244046}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -807,19 +723,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7273350118170244046
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6489331686365558812}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8944336655422409498
 GameObject:
   m_ObjectHideFlags: 0

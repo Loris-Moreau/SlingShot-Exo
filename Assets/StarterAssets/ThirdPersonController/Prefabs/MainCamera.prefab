@@ -45,11 +45,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slingAnim: {fileID: 1370640450}
-  chargeMax: 100
-  chargeSpeed: 75
+  chargeMax: 70
+  chargeSpeed: 25
   fireButton: 323
   spawn: {fileID: 1849563366}
-  arrowRb: {fileID: 4070310750642791018, guid: 8ab2616e48be5b342b6dea71b6507878, type: 3}
+  arrowRb: {fileID: 4070310750642791018, guid: 12731dbb18c38c94bb944f644a59d821, type: 3}
 --- !u!1 &1370640448
 GameObject:
   m_ObjectHideFlags: 0
@@ -84,6 +84,7 @@ Transform:
   - {fileID: 2010440147}
   - {fileID: 1831870932}
   - {fileID: 1849563366}
+  - {fileID: 1844211950445575745}
   - {fileID: 172040430447642467}
   - {fileID: 4450106959087774598}
   m_Father: {fileID: 8944336655422409503}
@@ -327,11 +328,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1849563365}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.275, z: 0}
+  m_LocalPosition: {x: 0, y: 1.263, z: 0.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1844211950445575745}
+  m_Children: []
   m_Father: {fileID: 1370640449}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -542,7 +542,7 @@ GameObject:
   - component: {fileID: 6525927860106250613}
   - component: {fileID: 5590255745980725889}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Cube(6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -555,12 +555,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1703945419734397814}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.379}
-  m_LocalScale: {x: 0.5, y: 0.15, z: 0.15700501}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.2749999, z: -0.37900272}
+  m_LocalScale: {x: 0.5, y: 0.15000002, z: 0.15700501}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1849563366}
+  m_Father: {fileID: 1370640449}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5639384757868880819
@@ -855,7 +855,7 @@ Transform:
   - {fileID: 1103232285}
   - {fileID: 1370640449}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &8944336655422409496
 Camera:

@@ -5,16 +5,17 @@ using UnityEngine;
 
 public class Arrows : MonoBehaviour
 {
-	public Bow bow;
+	public GameObject boom;
+	public GameObject boomS;
 
     public int damage;
 
 	private void OnTriggerEnter(Collider other)
 	{
-		if (CompareTag("Enemy"))
+		if (other.CompareTag("Enemy"))
 		{
-			//Kaboom
-			bow.arrowRb.gameObject.SetActive(true);
+			boomS.SetActive(true);
+			boom.SetActive(true); //Kaboom
 		}
 	}
 }

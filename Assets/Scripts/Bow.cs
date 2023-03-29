@@ -32,7 +32,7 @@ public class Bow : MonoBehaviour
 		if (Input.GetKeyUp(fireButton))
 		{
 			Rigidbody arrow = Instantiate(arrowRb, spawn.position, Quaternion.identity) as Rigidbody; //make new arrow at arrow spawn, as rigidbody not an object
-			arrow.AddForce(spawn.forward * charge, ForceMode.Impulse); //shoots the arrow forward multiplied by the charge, ///forceMode aply force all at once 
+			arrow.AddForce(spawn.forward * (charge), ForceMode.Impulse); //shoots the arrow forward multiplied by the charge, ///forceMode aply force all at once 
 			charge = 0; //reset charge to fire again
 			slingAnim.SetBool("Aim", false); //sling shot release
 		}

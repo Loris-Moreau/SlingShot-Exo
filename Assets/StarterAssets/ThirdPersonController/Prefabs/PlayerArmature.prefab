@@ -1063,7 +1063,7 @@ Transform:
   - {fileID: 8002264680419333305}
   - {fileID: 272993188807782130}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &6982812146204527121
 Animator:
@@ -1528,7 +1528,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1627025929}
   - {fileID: 6737443129744485833}
   - {fileID: 5944892902790622099}
   - {fileID: 3964097221717966225}
@@ -2746,68 +2745,3 @@ Transform:
   m_Father: {fileID: 4372607808223944788}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 78.102, y: 0, z: 0}
---- !u!1001 &1627154623
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 2
-    m_TransformParent: {fileID: 8626512282341172403}
-    m_Modifications:
-    - target: {fileID: 100054, guid: 0be2ba322dd85494db39a44ee439af41, type: 3}
-      propertyPath: m_Name
-      value: Wooden Bow
-      objectReference: {fileID: 0}
-    - target: {fileID: 400054, guid: 0be2ba322dd85494db39a44ee439af41, type: 3}
-      propertyPath: m_RootOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400054, guid: 0be2ba322dd85494db39a44ee439af41, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.06630878
-      objectReference: {fileID: 0}
-    - target: {fileID: 400054, guid: 0be2ba322dd85494db39a44ee439af41, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.14110196
-      objectReference: {fileID: 0}
-    - target: {fileID: 400054, guid: 0be2ba322dd85494db39a44ee439af41, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.2843456
-      objectReference: {fileID: 0}
-    - target: {fileID: 400054, guid: 0be2ba322dd85494db39a44ee439af41, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.57403773
-      objectReference: {fileID: 0}
-    - target: {fileID: 400054, guid: 0be2ba322dd85494db39a44ee439af41, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.6021453
-      objectReference: {fileID: 0}
-    - target: {fileID: 400054, guid: 0be2ba322dd85494db39a44ee439af41, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.37035635
-      objectReference: {fileID: 0}
-    - target: {fileID: 400054, guid: 0be2ba322dd85494db39a44ee439af41, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.4132045
-      objectReference: {fileID: 0}
-    - target: {fileID: 400054, guid: 0be2ba322dd85494db39a44ee439af41, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400054, guid: 0be2ba322dd85494db39a44ee439af41, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -97.317
-      objectReference: {fileID: 0}
-    - target: {fileID: 400054, guid: 0be2ba322dd85494db39a44ee439af41, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_AddedGameObjects: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0be2ba322dd85494db39a44ee439af41, type: 3}
---- !u!4 &1627025929 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400054, guid: 0be2ba322dd85494db39a44ee439af41,
-    type: 3}
-  m_PrefabInstance: {fileID: 1627154623}
-  m_PrefabAsset: {fileID: 0}

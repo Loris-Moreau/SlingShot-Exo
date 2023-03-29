@@ -56,7 +56,7 @@ MonoBehaviour:
   m_Lens:
     FieldOfView: 40
     OrthographicSize: 10
-    NearClipPlane: 0.2
+    NearClipPlane: 0.3
     FarClipPlane: 500
     Dutch: 0
     ModeOverride: 0
@@ -151,14 +151,14 @@ MonoBehaviour:
   m_VerticalAxis:
     Value: 0
     m_SpeedMode: 0
-    m_MaxSpeed: 300
+    m_MaxSpeed: 200
     m_AccelTime: 0.1
     m_DecelTime: 0.1
     m_InputAxisName: Mouse Y
     m_InputAxisValue: 0
     m_InvertInput: 1
-    m_MinValue: -45
-    m_MaxValue: 45
+    m_MinValue: -40
+    m_MaxValue: 40
     m_Wrap: 0
     m_Recentering:
       m_enabled: 0
@@ -175,14 +175,14 @@ MonoBehaviour:
   m_HorizontalAxis:
     Value: 0
     m_SpeedMode: 0
-    m_MaxSpeed: 300
+    m_MaxSpeed: 200
     m_AccelTime: 0.1
     m_DecelTime: 0.1
     m_InputAxisName: Mouse X
     m_InputAxisValue: 0
     m_InvertInput: 0
-    m_MinValue: -180
-    m_MaxValue: 180
+    m_MinValue: -175
+    m_MaxValue: 175
     m_Wrap: 1
     m_Recentering:
       m_enabled: 0
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damping: {x: 0, y: 0, z: 0}
-  ShoulderOffset: {x: 0, y: 0, z: 0.15}
+  ShoulderOffset: {x: 0, y: 0, z: 0.2}
   VerticalArmLength: 0
   CameraSide: 0
   CameraDistance: 0

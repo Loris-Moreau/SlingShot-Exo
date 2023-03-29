@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bow : MonoBehaviour
 {
 	public Animator slingAnim;
+
 	float charge; //curent charge
 	public float chargeMax; 
 	public float chargeSpeed; //rate of the charge (how fast it goes)

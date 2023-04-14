@@ -1,6 +1,4 @@
 using StarterAssets;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -8,9 +6,6 @@ public class Player : MonoBehaviour
     ThirdPersonController TPC;
 
     public static Player Instance;
-
-    public GameObject loseText;
-    public GameObject winText;
 
     void Awake()
     {

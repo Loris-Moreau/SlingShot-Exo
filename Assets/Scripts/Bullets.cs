@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Bullets : MonoBehaviour
@@ -15,7 +13,7 @@ public class Bullets : MonoBehaviour
 	{
 		if (other.CompareTag("Enemy"))
 		{
-			boomS.SetActive(true);
+			boomS.SetActive(true); //boom
 			boom.SetActive(true); //Kaboom
 
 

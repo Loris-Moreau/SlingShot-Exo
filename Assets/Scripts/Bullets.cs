@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Bullets : MonoBehaviour
 {
+	public Enemy enemy;
+
 	public GameObject boom;
 	public GameObject boomS;
 
@@ -15,6 +17,8 @@ public class Bullets : MonoBehaviour
 		{
 			boomS.SetActive(true);
 			boom.SetActive(true); //Kaboom
+
+
 		}
 	}
 }

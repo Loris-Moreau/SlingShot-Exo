@@ -13,7 +13,7 @@ public class Sling : MonoBehaviour
 	public KeyCode fireButton; //boom boom button (bbb)
 
 	public Transform spawn; //position of the bullet
-	public Rigidbody buulletRb; //"blueprint" of the bullet
+	public Rigidbody bulletRb; //"blueprint" of the bullet
 
 	private void Start()
 	{
@@ -33,7 +33,7 @@ public class Sling : MonoBehaviour
 
 		if (Input.GetKeyUp(fireButton))
 		{
-			Rigidbody bullet = Instantiate(buulletRb, spawn.position, Quaternion.identity) as Rigidbody; //make new bullet at bullet spawn, as rigidbody not an object
+			Rigidbody bullet = Instantiate(bulletRb, spawn.position, Quaternion.identity) as Rigidbody; //make new bullet at bullet spawn, as rigidbody not an object
 
 			bullet.AddForce(spawn.forward * (charge), ForceMode.Impulse); //shoots the bullet forward multiplied by the charge, ///forceMode aply force all at once 
 

@@ -5,7 +5,7 @@ public class Sling : MonoBehaviour
 	public Animator slingAnim;
 
 	public float charge; //curent charge
-	public float chargeMax = 70f; 
+	public float maxCharge = 70f; 
 	public float chargeSpeed = 25f; //rate of the charge (how fast it goes)
 
 	public KeyCode fireButton; //boom boom button (bbb)
@@ -23,11 +23,11 @@ public class Sling : MonoBehaviour
 
 	private void Update()
 	{
-		if(Input.GetKey(fireButton) && charge < chargeMax) //pressing bbb & charge smaller than max charge
+		if(Input.GetKey(fireButton) && charge < maxCharge) //pressing bbb & charge smaller than max charge
 		{
 			charge += Time.deltaTime * chargeSpeed; //charging up
 
-			Debug.Log(charge.ToString());
+			//Debug.Log(charge.ToString());
 
 			slingAnim.SetBool("Aim", true); //sling shot pull
 		}

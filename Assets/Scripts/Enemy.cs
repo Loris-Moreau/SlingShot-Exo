@@ -52,9 +52,9 @@ public class Enemy : MonoBehaviour
 
 			Rigidbody legs = Instantiate(LegsRb, LegsSpawn.position, Quaternion.identity) as Rigidbody;
 
-			head.AddForce(HeadSpawn.forward, ForceMode.Impulse);
+			head.AddForce(HeadSpawn.right * (Sling.Instance.charge), ForceMode.Impulse);
 
-			legs.AddForce(LegsSpawn.forward * (Sling.Instance.charge), ForceMode.Impulse);
+			legs.AddForce(LegsSpawn.right * (Sling.Instance.charge), ForceMode.Impulse);
 
 			boxCollider.enabled = false;
 		}

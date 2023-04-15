@@ -5,8 +5,8 @@ public class Sling : MonoBehaviour
 	public Animator slingAnim;
 
 	float charge; //curent charge
-	public float chargeMax; 
-	public float chargeSpeed; //rate of the charge (how fast it goes)
+	public float chargeMax = 70f; 
+	public float chargeSpeed = 25f; //rate of the charge (how fast it goes)
 
 	public KeyCode fireButton; //boom boom button (bbb)
 

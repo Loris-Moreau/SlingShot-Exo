@@ -13,6 +13,9 @@ public class Enemy : MonoBehaviour
 
 	private void Update()
 	{
-		//if enemy gets hit = Kaboom
+		if (IsEnemyHit)
+		{
+			//if enemy gets hit = Kaboom
+		}
 	}
 }

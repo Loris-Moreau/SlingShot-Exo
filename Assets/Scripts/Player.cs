@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public Enemy enemy;
     ThirdPersonController TPC;
 
     public static Player Instance;
@@ -20,7 +21,10 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-
+        if (enemy.IsEnemyHit)
+        {
+            //Kaboom
+        }
 	}
 }
 

@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.InteropServices;
 using UnityEngine;
 //why am I like this ?
 //aaaaaaaaaaaaaaaaaaaaahhhhhhhhhhhhhhh
@@ -46,9 +47,12 @@ public class Enemy : MonoBehaviour
 		{
 			Skelly.SetActive(false);
 
-			Rigidbody head = Instantiate(HeadRb, HeadSpawn.position, Quaternion.identity) as Rigidbody; //make new head at head spawn, as rigidbody not an object
+			Rigidbody head = Instantiate(HeadRb, HeadSpawn.position, Quaternion.identity) as Rigidbody;
 
-			Rigidbody legs = Instantiate(LegsRb, LegsSpawn.position, Quaternion.identity) as Rigidbody; //make new legs at legs spawn, as rigidbody not an object
+			Rigidbody legs = Instantiate(LegsRb, LegsSpawn.position, Quaternion.identity) as Rigidbody;
+
+			head.AddForce(HeadSpawn.forward, ForceMode.Impulse);
+			legs.AddForce(LegsSpawn.forward, ForceMode.Impulse);
 
 			boxCollider.enabled = false;
 		}

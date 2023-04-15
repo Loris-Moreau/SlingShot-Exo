@@ -8,18 +8,18 @@ public class Enemy : MonoBehaviour
 {
 	public bool IsEnemyHit;
 
-	//public Bullets bullet;
-	public Sling sling;
-
 	public BoxCollider boxCollider;
 
 	public GameObject Skelly;
 
-	public Transform HeadSpawn; //position of the head
-	public Rigidbody HeadRb; //"blueprint" of the head
+	public Transform HeadSpawn; //position of the Head
+	public Rigidbody HeadRb; //"blueprint" of the Head
 
-	public Transform LegsSpawn; //position of the legs
-	public Rigidbody LegsRb; //"blueprint" of the legs
+	public Transform ChestSpawn; //position of the Chest
+	public Rigidbody ChestRb; //"blueprint" of the Chest
+
+	public Transform LegsSpawn; //position of the Legs
+	public Rigidbody LegsRb; //"blueprint" of the Legs
 
 	private void Update()
 	{
@@ -50,11 +50,15 @@ public class Enemy : MonoBehaviour
 
 			Rigidbody head = Instantiate(HeadRb, HeadSpawn.position, Quaternion.identity) as Rigidbody;
 
+			Rigidbody chest = Instantiate(ChestRb, ChestSpawn.position, Quaternion.identity) as Rigidbody;
+
 			Rigidbody legs = Instantiate(LegsRb, LegsSpawn.position, Quaternion.identity) as Rigidbody;
 
-			head.AddForce(HeadSpawn.right * (Sling.Instance.charge), ForceMode.Impulse);
+			head.AddForce(HeadSpawn.right, ForceMode.Impulse);
 
-			legs.AddForce(LegsSpawn.right * (Sling.Instance.charge), ForceMode.Impulse);
+			chest.AddExplosionForce(10, ChestSpawn.forward, 20);
+
+			legs.AddForce(LegsSpawn.right, ForceMode.Impulse);
 
 			boxCollider.enabled = false;
 		}

@@ -23,8 +23,7 @@ public class Player : MonoBehaviour
     {
         if (enemy.IsEnemyHit)
         {
-            //Kaboom
+
         }
 	}
 }
-

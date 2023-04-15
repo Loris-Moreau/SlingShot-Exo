@@ -37,7 +37,7 @@ Transform:
   - {fileID: 3955765043822159152}
   - {fileID: 6107444612977471555}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1178360319779030269
 MeshFilter:
@@ -130,11 +130,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 915e4e21c6100ef49922c822cb62a128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
-  IsEnemyHit: 0
   boom: {fileID: 6109376837182392155}
   boomS: {fileID: 3958915767516242126}
-  damage: 10
+  damage: 20
 --- !u!1 &8122529013868587722
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
 	public bool IsEnemyHit;
 
 	//public Bullets bullet;
+	public Sling sling;
 
 	public BoxCollider boxCollider;
 
@@ -52,7 +53,8 @@ public class Enemy : MonoBehaviour
 			Rigidbody legs = Instantiate(LegsRb, LegsSpawn.position, Quaternion.identity) as Rigidbody;
 
 			head.AddForce(HeadSpawn.forward, ForceMode.Impulse);
-			legs.AddForce(LegsSpawn.forward, ForceMode.Impulse);
+
+			legs.AddForce(LegsSpawn.forward * (Sling.Instance.charge), ForceMode.Impulse);
 
 			boxCollider.enabled = false;
 		}

@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+	public bool IsEnemyHit;
 
+	private void Start()
+	{
+		IsEnemyHit = false;
+	}
 
 	private void Update()
 	{
-		
+		//if enemy gets hit = Kaboom
 	}
 }

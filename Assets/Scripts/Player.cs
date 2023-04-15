@@ -20,15 +20,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-      
-    }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (gameObject.CompareTag("Enemy"))
-        {
-           //Enemy hit
-        }
-    }
+	}
 }
 

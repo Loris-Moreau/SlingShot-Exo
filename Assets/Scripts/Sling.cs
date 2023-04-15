@@ -15,7 +15,7 @@ public class Sling : MonoBehaviour
 
 	private void Start()
 	{
-		//slingAnim = GetComponent<Animator>();	
+
 	}
 
 	private void Update()

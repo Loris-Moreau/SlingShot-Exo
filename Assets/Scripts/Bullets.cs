@@ -13,10 +13,10 @@ public class Bullets : MonoBehaviour
 	{
 		if (other.CompareTag("Enemy"))
 		{
+			enemy.IsEnemyHit = true;
+
 			boomS.SetActive(true); //boom
 			boom.SetActive(true); //Kaboom
-
-
 		}
 	}
 }

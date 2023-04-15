@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class Bullets : MonoBehaviour
 {
-	public Enemy enemy;
+	//public Enemy enemy;
 
-	public bool IsEnemyHit = false;
+	//public bool IsEnemyHit = false;
 
 	public GameObject boom;
 	public GameObject boomS;
@@ -15,14 +15,14 @@ public class Bullets : MonoBehaviour
 	{
 		if (other.CompareTag("Enemy"))
 		{
-			IsEnemyHit = true;
+			//IsEnemyHit = true;
 
 			boomS.SetActive(true); //boom
 			boom.SetActive(true); //SpawnBones
 		}
-		else 
+		/*else 
 		{ 
 			IsEnemyHit = false;
-		}
+		}*/
 	}
 }

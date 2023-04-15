@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public Enemy enemy;
+    //public Enemy enemy;
     ThirdPersonController TPC;
 
     public static Player Instance;

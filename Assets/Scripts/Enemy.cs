@@ -48,17 +48,17 @@ public class Enemy : MonoBehaviour
 		{
 			Skelly.SetActive(false);
 
-			Rigidbody head = Instantiate(HeadRb, HeadSpawn.position, Quaternion.identity) as Rigidbody;
+			Rigidbody head = Instantiate(HeadRb, HeadSpawn.position, Quaternion.identity) as Rigidbody; //head spawn
 
-			Rigidbody chest = Instantiate(ChestRb, ChestSpawn.position, Quaternion.identity) as Rigidbody;
+			Rigidbody chest = Instantiate(ChestRb, ChestSpawn.position, Quaternion.identity) as Rigidbody; //chest spawn
 
-			Rigidbody legs = Instantiate(LegsRb, LegsSpawn.position, Quaternion.identity) as Rigidbody;
+			Rigidbody legs = Instantiate(LegsRb, LegsSpawn.position, Quaternion.identity) as Rigidbody; //legs spawn
 
-			head.AddForce(HeadSpawn.right, ForceMode.Impulse);
+			head.AddExplosionForce(100, HeadSpawn.up, 15); 
 
-			chest.AddExplosionForce(10, ChestSpawn.forward, 20);
+			chest.AddExplosionForce(150, ChestSpawn.right, 25);
 
-			legs.AddForce(LegsSpawn.right, ForceMode.Impulse);
+			legs.AddExplosionForce(125, LegsSpawn.forward, 20);
 
 			boxCollider.enabled = false;
 		}

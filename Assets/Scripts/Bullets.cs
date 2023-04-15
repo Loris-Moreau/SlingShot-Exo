@@ -4,6 +4,8 @@ public class Bullets : MonoBehaviour
 {
 	public Enemy enemy;
 
+	public bool IsEnemyHit = false;
+
 	public GameObject boom;
 	public GameObject boomS;
 
@@ -13,10 +15,14 @@ public class Bullets : MonoBehaviour
 	{
 		if (other.CompareTag("Enemy"))
 		{
-			enemy.IsEnemyHit = true;
+			IsEnemyHit = true;
 
 			boomS.SetActive(true); //boom
-			boom.SetActive(true); //Kaboom
+			boom.SetActive(true); //SpawnBones
+		}
+		else 
+		{ 
+			IsEnemyHit = false;
 		}
 	}
 }

@@ -21,9 +21,9 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if (enemy.IsEnemyHit)
+        /*if (enemy.IsEnemyHit)
         {
 
-        }
+        }*/
 	}
 }

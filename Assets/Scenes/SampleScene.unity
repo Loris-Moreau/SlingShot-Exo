@@ -777,6 +777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efc5357b9499d1a47980f749bb01c2f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thirdPersonController: {fileID: 0}
   InstructionsText: {fileID: 893962359}
   MissionText: {fileID: 116813072}
   WinText: {fileID: 993418904}

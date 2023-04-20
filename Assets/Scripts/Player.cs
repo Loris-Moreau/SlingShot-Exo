@@ -4,6 +4,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public Rewards rewards;
+
     //public Enemy enemy;
     ThirdPersonController TPC;
 
@@ -27,6 +28,8 @@ public class Player : MonoBehaviour
         if (enemyCounter >= 9)
         {
             rewards.Won();
+
+            TPC.enabled = false;
         }
 	}
 }

@@ -7,7 +7,7 @@ public class Bullets : MonoBehaviour
 
 	public AudioClip Explosion;
 
-    public int damage;
+    //public int damage;
 
 	private void OnTriggerEnter(Collider other)
 	{

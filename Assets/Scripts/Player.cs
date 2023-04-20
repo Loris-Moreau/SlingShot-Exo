@@ -3,10 +3,13 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public Rewards rewards;
     //public Enemy enemy;
     ThirdPersonController TPC;
 
     public static Player Instance;
+
+    [SerializeField] public static int enemyCounter = 0;
 
     void Awake()
     {
@@ -21,9 +24,9 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        /*if (enemy.IsEnemyHit)
+        if (enemyCounter >= 9)
         {
-
-        }*/
+            rewards.Won();
+        }
 	}
 }

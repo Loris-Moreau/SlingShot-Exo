@@ -13,12 +13,12 @@ public class Sling : MonoBehaviour
 	public Transform spawn; //position of the bullet
 	public Rigidbody bulletRb; //"blueprint" of the bullet
 
-	public static Sling Instance;
+	//public static Sling Instance;
 
 	private void Start()
 	{
-		if (Instance) Destroy(this);
-		else Instance = this;
+		/*if (Instance) Destroy(this);
+		else Instance = this;*/
 	}
 
 	private void Update()

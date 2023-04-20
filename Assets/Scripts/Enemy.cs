@@ -1,5 +1,3 @@
-using System;
-using System.Runtime.InteropServices;
 using UnityEngine;
 
 //why am I like this ?
@@ -26,27 +24,15 @@ public class Enemy : MonoBehaviour
 
 	public int hitCounter; //to know how many times you hit an enemy
 
-	/*public GameObject score1;
-	public GameObject score2;*/
-
 	private void Start()
 	{
 		hitCounter = 0;
-
-		/*score1.SetActive(false);
-		score2.SetActive(false);*/
 	}
 
 	private void Update()
 	{
-		/*if (hitCounter==1)
-		{
-			score1.SetActive(true);
-		}*/
 		if (hitCounter >= 2) 
 		{
-			//score2.SetActive(true);
-
 			SpawnBones();
 
 			hitCounter = 0;
@@ -64,6 +50,8 @@ public class Enemy : MonoBehaviour
 			AudioSource.PlayClipAtPoint(ScorePing, transform.position);
 
 			Rewards.CurrentScore += 50;
+
+			Player.enemyCounter++;
 		}
 	}
 

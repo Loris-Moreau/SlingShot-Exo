@@ -1,12 +1,15 @@
 using System;
 using System.Runtime.InteropServices;
 using UnityEngine;
+
 //why am I like this ?
 //aaaaaaaaaaaaaaaaaaaaahhhhhhhhhhhhhhh
 
 public class Enemy : MonoBehaviour
 {
 	public bool IsEnemyHit;
+
+	public AudioClip ScorePing;
 
 	public BoxCollider boxCollider;
 
@@ -21,11 +24,32 @@ public class Enemy : MonoBehaviour
 	public Transform LegsSpawn; //position of the Legs
 	public Rigidbody LegsRb; //"blueprint" of the Legs
 
+	public int hitCounter; //to know how many times you hit an enemy
+
+	/*public GameObject score1;
+	public GameObject score2;*/
+
+	private void Start()
+	{
+		hitCounter = 0;
+
+		/*score1.SetActive(false);
+		score2.SetActive(false);*/
+	}
+
 	private void Update()
 	{
-		if (IsEnemyHit)
+		/*if (hitCounter==1)
 		{
+			score1.SetActive(true);
+		}*/
+		if (hitCounter >= 2) 
+		{
+			//score2.SetActive(true);
+
 			SpawnBones();
+
+			hitCounter = 0;
 		}
 	}
 
@@ -34,6 +58,12 @@ public class Enemy : MonoBehaviour
 		if(other.CompareTag("Bullet"))
 		{
 			IsEnemyHit = true;
+
+			hitCounter++;
+
+			AudioSource.PlayClipAtPoint(ScorePing, transform.position);
+
+			Rewards.CurrentScore += 50;
 		}
 	}
 

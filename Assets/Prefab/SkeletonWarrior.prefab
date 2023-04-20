@@ -2763,6 +2763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsEnemyHit: 0
+  ScorePing: {fileID: 8300000, guid: b0e423c5c9a2c5e4f83dd0c592a0eec9, type: 3}
   boxCollider: {fileID: 4275980049245296531}
   Skelly: {fileID: 4980114724654216672}
   HeadSpawn: {fileID: 6125440478049614872}
@@ -2771,6 +2772,7 @@ MonoBehaviour:
   ChestRb: {fileID: 243627778469908499, guid: 6a58d535bb03a124f9ae54b3c5448806, type: 3}
   LegsSpawn: {fileID: 6443581110466496296}
   LegsRb: {fileID: 7497786466077193557, guid: 9b6f9af1e63f38343af9495969b81c61, type: 3}
+  hitCounter: 0
 --- !u!1 &7570507954132780871
 GameObject:
   m_ObjectHideFlags: 0
